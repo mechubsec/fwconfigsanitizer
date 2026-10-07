@@ -1,7 +1,7 @@
 {
   "name": "fwconfigsanitizer-fixture-suite",
   "private": true,
-  "description": "Node harness and 100-case regression suite for the fwconfigsantizer sanitizer engine (no runtime dependencies; test/ only).",
+  "description": "Node harness and 100-case regression suite for the fwconfigsanitizer sanitizer engine (no runtime dependencies; test/ only).",
   "engines": {
     "node": ">=20"
   },

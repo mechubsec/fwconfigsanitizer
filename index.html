@@ -18,7 +18,7 @@
   literal substring, ahead of the real one):
     node -e "const fs=require('fs');const h=fs.readFileSync('index.html','utf8');const tag='<'+'script>';const s=h.lastIndexOf(tag)+tag.length;const e=h.lastIndexOf('</'+'script>');console.log('sha256-'+require('crypto').createHash('sha256').update(h.slice(s,e)).digest('base64'))"
 -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-GkvtoGWn0fyy9x3WM9AOj71YMNan2HeH/xmXCcvrk6M='; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-CVPPmtx4Iynd6sPb4DV2TktI/8BEPQpZQfGJJz2L0GE='; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; object-src 'none'">
 <title>Firewall Config Sanitizer</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'><rect width='120' height='120' fill='%230B0D12'/><path d='M18,96 L18,32 L60,74 L102,32 L102,96' fill='none' stroke='%234DD0C8' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/><circle cx='18' cy='96' r='7' fill='%234DD0C8'/><circle cx='18' cy='32' r='7' fill='%234DD0C8'/><circle cx='102' cy='32' r='7' fill='%234DD0C8'/><circle cx='102' cy='96' r='7' fill='%234DD0C8'/><circle cx='60' cy='74' r='11' fill='%230D9488'/><circle cx='60' cy='74' r='5.5' fill='%23B7F5F0'/></svg>">
 <style>
@@ -1601,7 +1601,7 @@ async function deriveHmacKey(salt) {
   return crypto.subtle.deriveKey(
     {
       name: 'PBKDF2',
-      salt: encoder.encode('fwconfigsantizer:ip-anonymization:v1'),
+      salt: encoder.encode('fwconfigsanitizer:ip-anonymization:v1'),
       iterations: 100000,
       hash: 'SHA-256',
     },

@@ -1,4 +1,4 @@
-title = "fwconfigsantizer gitleaks config"
+title = "fwconfigsanitizer gitleaks config"
 
 [extend]
 path = ".gitleaks-vendor.toml"

@@ -6,7 +6,7 @@ Please **do not** open a public GitHub issue for a security vulnerability.
 
 Instead, use GitHub's private vulnerability reporting for this repository:
 
-https://github.com/mechubsec/fwconfigsantizer/security/advisories/new
+https://github.com/mechubsec/fwconfigsanitizer/security/advisories/new
 
 Include what you'd include in a bug report — affected version (see the `VERSION` file, or the commit SHA), reproduction steps, and impact — but keep it in the private report, not a public issue, PR, or discussion.
 

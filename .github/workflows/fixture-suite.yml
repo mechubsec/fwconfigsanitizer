@@ -1,6 +1,6 @@
 name: fixture-suite
 
-# Runs the fwconfigsantizer regression suite on every PR. Actions pinned to
+# Runs the fwconfigsanitizer regression suite on every PR. Actions pinned to
 # commit SHAs. The harness extracts the sanitizer engine from index.html
 # (unmodified) and runs it against 100 synthetic fixtures; it fails the job
 # only when a case's result no longer matches the recorded expectation in

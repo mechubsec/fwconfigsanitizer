@@ -1,6 +1,6 @@
 'use strict';
-// Fixture suite for the fwconfigsantizer engine, per the MEC-6 privacy review
-// ("Proposed fwconfigsantizer fixture suite"). Every input is synthetic
+// Fixture suite for the fwconfigsanitizer engine, per the MEC-6 privacy review
+// ("Proposed fwconfigsanitizer fixture suite"). Every input is synthetic
 // (RFC 5737 / documentation IPs, example.net-style domains, FAKE* secrets).
 //
 // Each standard case (1-94) asserts that one or more sensitive tokens are

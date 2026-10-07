@@ -1,7 +1,7 @@
 'use strict';
-// H3a fixture-suite harness. Extracts the fwconfigsantizer engine from
+// H3a fixture-suite harness. Extracts the fwconfigsanitizer engine from
 // index.html (unmodified) and runs the 100-case regression suite from the
-// MEC-6 privacy review's "Proposed fwconfigsantizer fixture suite".
+// MEC-6 privacy review's "Proposed fwconfigsanitizer fixture suite".
 //
 // Usage:
 //   node test/run.js                  # human-readable table + summary, exit 1 on unexpected drift
@@ -148,7 +148,7 @@ async function main() {
   const passCount = allResults.filter((r) => r.actualStatus === 'PASS').length;
   const failCount = allResults.filter((r) => r.actualStatus === 'FAIL').length;
 
-  console.log(`fwconfigsantizer fixture suite — engine extracted from index.html:${startLineNo}-${endLineNo}`);
+  console.log(`fwconfigsanitizer fixture suite — engine extracted from index.html:${startLineNo}-${endLineNo}`);
   console.log(`${allResults.length} cases: ${passCount} PASS, ${failCount} FAIL (per the review's convention: FAIL = leak reproduced)\n`);
 
   for (const r of allResults) {
@@ -182,7 +182,7 @@ async function main() {
 
   if (mdOut) {
     const lines = [
-      '# fwconfigsantizer fixture suite report',
+      '# fwconfigsanitizer fixture suite report',
       '',
       `Engine extracted from \`index.html:${startLineNo}-${endLineNo}\`.`,
       '',
