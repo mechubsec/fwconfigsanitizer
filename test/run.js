@@ -189,7 +189,7 @@ async function main() {
       '| # | Group | Status | Expected | Description |',
       '|---|---|---|---|---|',
       ...allResults.map(
-        (r) => `| ${r.id} | ${r.group} | ${r.actualStatus} | ${r.expected} | ${r.description.replace(/\|/g, '\\|')} |`
+        (r) => `| ${r.id} | ${r.group} | ${r.actualStatus} | ${r.expected} | ${r.description.replace(/[\\|]/g, '\\$&')} |`
       ),
       '',
       `${allResults.length} cases: ${passCount} PASS, ${failCount} FAIL.`,
